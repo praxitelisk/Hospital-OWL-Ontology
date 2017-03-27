@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TOUCHGRAPH_LB [
+
+<!ELEMENT TOUCHGRAPH_LB (NODESET, EDGESET, PARAMETERS)>
+<!ELEMENT NODESET (NODE+)>
+<!ELEMENT EDGESET (EDGE*)>
+<!ELEMENT PARAMETERS (PARAM*)>
+
+<!ELEMENT NODE (NODE_LOCATION?, NODE_LABEL?, NODE_URL?, NODE_HINT?)>
+
+<!ELEMENT NODE_LABEL EMPTY>
+<!ELEMENT NODE_URL EMPTY>
+<!ELEMENT NODE_HINT EMPTY>
+
+<!ATTLIST TOUCHGRAPH_LB
+  version CDATA #REQUIRED >
+
+<!ATTLIST NODE
+  nodeID CDATA #REQUIRED >
+
+<!ATTLIST NODE_LOCATION
+  visible CDATA #IMPLIED
+  x CDATA #IMPLIED
+  y CDATA #IMPLIED >
+
+<!ATTLIST NODE_LABEL
+  label CDATA #REQUIRED 
+  shape CDATA #IMPLIED
+  backColor CDATA #IMPLIED 
+  textColor CDATA #IMPLIED
+  fontSize CDATA #IMPLIED >
+
+<!ATTLIST NODE_URL 
+  url CDATA #REQUIRED 
+  urlIsLocal CDATA #IMPLIED 
+  urlIsXML CDATA #IMPLIED >
+
+<!ATTLIST NODE_HINT 
+  hint CDATA #REQUIRED 
+  height CDATA #IMPLIED 
+  width CDATA #IMPLIED 
+  isHTML CDATA #IMPLIED >  
+
+<!ELEMENT EDGE EMPTY>
+
+<!ATTLIST EDGE
+  fromID CDATA #REQUIRED
+  toID CDATA #REQUIRED 
+  length CDATA #IMPLIED 
+  color CDATA #IMPLIED 
+  type CDATA #IMPLIED
+  visible CDATA #IMPLIED >
+
+<!ELEMENT PARAM EMPTY>
+
+<!ATTLIST PARAM
+  name CDATA #REQUIRED
+  value CDATA #REQUIRED >
+]>
+<TOUCHGRAPH_LB version="1.4">
+    <NODESET/>
+    <EDGESET/>
+    <PARAMETERS>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#HistoryUpdate:::Color" value="-1"/>
+        <PARAM name="maxEdgIndex" value="3"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#History:::Changed" value="false"/>
+        <PARAM name="CLS:::@A35_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDepartment:::Show" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Staff:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#isEspeciallyAttends:::Changed" value="false"/>
+        <PARAM name="CLS:::@A47_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Appointment:::Color" value="-1"/>
+        <PARAM name="sup" value="true"/>
+        <PARAM name="CLS:::@A59_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A13_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#PatientStateCategory:::Color" value="-1"/>
+        <PARAM name="CLS:::@A25_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientHasAnAssignedBed:::Changed" value="false"/>
+        <PARAM name="sub" value="true"/>
+        <PARAM name="clsLW" value="25"/>
+        <PARAM name="CLS:::@A37_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="edgBOLD" value="true"/>
+        <PARAM name="CLS:::@A6_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A49_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A27_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDepartment:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#inverse_of_patientIsAttendedBy:::Show" value="true"/>
+        <PARAM name="CLS:::@A72_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A9_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A47_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@2_bac86bb0_eaf0_4470_87d2_fd4c3c7a08ae:::Changed" value="false"/>
+        <PARAM name="CLS:::@A15_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Room:::Changed" value="false"/>
+        <PARAM name="CLS:::@A67_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientHistoryRecord:::Changed" value="false"/>
+        <PARAM name="speed" value="1"/>
+        <PARAM name="CLS:::@A28_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A27_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A48_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="edgBC" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasHistoryUpdates:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDepart:::Changed" value="false"/>
+        <PARAM name="CLS:::@A14_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A39_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A34_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A62_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A8_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A54_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="rotateSB" value="0"/>
+        <PARAM name="CLS:::@A20_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A17_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAppointedPatient:::Show" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#History:::Color" value="-1"/>
+        <PARAM name="CLS:::@A40_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#nurseInspectWard:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A60_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A29_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A21_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#MiscallaneousOrders:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#HistoryRecord:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Infrastructure:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wingHasWard:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#bedIsInRoom:::Changed" value="false"/>
+        <PARAM name="CLS:::@A41_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#departmentUseWard:::Changed" value="false"/>
+        <PARAM name="CLS:::@A61_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A64_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientHistoryRecord:::Show" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Department:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#attends:::Changed" value="false"/>
+        <PARAM name="insFS" value="12"/>
+        <PARAM name="CLS:::@A19_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Ward:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wardHasRooms:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wingHasDepartment:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wardHasRooms:::Show" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Staff:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Accounting:::Color" value="-1"/>
+        <PARAM name="CLS:::@A54_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Ward:::Changed" value="false"/>
+        <PARAM name="CLS:::@A66_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDoctor:::Color" value="-16777040"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Bed:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#roomHasBeds:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Patient:::Changed" value="false"/>
+        <PARAM name="sysslt" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Infrastructure:::Changed" value="false"/>
+        <PARAM name="CLS:::@A56_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAppointedPatient:::Changed" value="false"/>
+        <PARAM name="CLS:::@1_bac86bb0_eaf0_4470_87d2_fd4c3c7a08ae:::Color" value="-1"/>
+        <PARAM name="clsFS" value="12"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#bedIsInRoom:::Show" value="true"/>
+        <PARAM name="CLS:::@A19_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#worksIn:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A39_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="sysclt" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#departmentIsInWing:::Show" value="true"/>
+        <PARAM name="CLS:::@A59_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A46_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A25_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasPrescription:::Show" value="true"/>
+        <PARAM name="CLS:::@A7_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#bedIsAssignedToPatient:::Changed" value="false"/>
+        <PARAM name="CLS:::@A58_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A45_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#departmentUseWard:::Color" value="-16777040"/>
+        <PARAM name="insITLC" value="false"/>
+        <PARAM name="CLS:::@A65_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A26_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Wing:::Changed" value="false"/>
+        <PARAM name="CLS:::@A8_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientIsAttendedIn:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@1_bac86bb0_eaf0_4470_87d2_fd4c3c7a08ae:::Changed" value="false"/>
+        <PARAM name="CLS:::@A46_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A60_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A12_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Person:::Changed" value="false"/>
+        <PARAM name="CLS:::@A66_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="edgTC" value="-16777040"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#PatientStateCategory:::Changed" value="false"/>
+        <PARAM name="CLS:::@A32_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientIsAttendedBy:::Show" value="true"/>
+        <PARAM name="insBC" value="-1"/>
+        <PARAM name="CLS:::@A48_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A52_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A13_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A72_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A33_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A50_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A53_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#aboutHistoryRecord:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAppointedDoctor:::Changed" value="false"/>
+        <PARAM name="CLS:::@A73_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDepart:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#roomIsInWard:::Color" value="-16777040"/>
+        <PARAM name="cls" value="true"/>
+        <PARAM name="CLS:::@A38_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientIsAttendedIn:::Changed" value="false"/>
+        <PARAM name="clsslt" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasPrescription:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wingHasDepartment:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#headOfDept:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wingHasWard:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A7_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#nurseInspectWard:::Show" value="true"/>
+        <PARAM name="CLS:::@A40_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="clsITLC" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAppointedPatient:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#departmentIsInWing:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wingHasWard:::Changed" value="false"/>
+        <PARAM name="CLS:::@A52_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#attends:::Show" value="true"/>
+        <PARAM name="clsBC" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Reception:::Changed" value="false"/>
+        <PARAM name="edgTXT" value="false"/>
+        <PARAM name="insBOLD" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Patient:::Color" value="-1"/>
+        <PARAM name="CLS:::@A30_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasHistoryUpdates:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Wing:::Color" value="-1"/>
+        <PARAM name="SlotsCheckBoxState" value="false"/>
+        <PARAM name="CLS:::@A9_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Expenditures:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#inverse_of_patientIsAttendedBy:::Changed" value="false"/>
+        <PARAM name="CLS:::@A42_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Reception:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Expenditures:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor:::Color" value="-1"/>
+        <PARAM name="CLS:::@A20_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientIsAttendedIn:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#roomHasBeds:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A32_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#roomIsInWard:::Show" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Prescription:::Changed" value="false"/>
+        <PARAM name="CLS:::@A17_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A44_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A37_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientHasAnAssignedBed:::Show" value="true"/>
+        <PARAM name="CLS:::@A57_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A10_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A18_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A38_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientIsAttendedBy:::Changed" value="false"/>
+        <PARAM name="CLS:::@A22_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="clsBOLD" value="true"/>
+        <PARAM name="CLS:::@A58_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#inverse_of_patientIsAttendedBy:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#headOfDept:::Show" value="true"/>
+        <PARAM name="CLS:::@A34_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A6_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#nurseInspectWard:::Changed" value="false"/>
+        <PARAM name="CLS:::@A44_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDoctor:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#worksIn:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientIsAttendedBy:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A10_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A64_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A30_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A12_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A50_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="maxExpEdgIndex" value="3"/>
+        <PARAM name="CLS:::@A11_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="insTC" value="-10092442"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#departmentUseWard:::Show" value="true"/>
+        <PARAM name="CLS:::@A31_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#isSupervisor:::Changed" value="false"/>
+        <PARAM name="CLS:::@2_bac86bb0_eaf0_4470_87d2_fd4c3c7a08ae:::Color" value="-1"/>
+        <PARAM name="CLS:::@A51_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Person:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#attends:::Color" value="-16777040"/>
+        <PARAM name="edgLW" value="20"/>
+        <PARAM name="CLS:::@A36_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A71_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#roomIsInWard:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasPrescription:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#isSupervisor:::Show" value="true"/>
+        <PARAM name="CLS:::@A71_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A14_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDepartment:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#isEspeciallyAttends:::Show" value="true"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#MiscallaneousOrders:::Color" value="-1"/>
+        <PARAM name="CLS:::@A26_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#HistoryRecord:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDepart:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedDoctor:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasCollege:::Show" value="true"/>
+        <PARAM name="CLS:::@A61_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#roomHasBeds:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#headOfDept:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAppointedDoctor:::Color" value="-16777040"/>
+        <PARAM name="clsTC" value="-10138103"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientHistoryRecord:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#bedIsAssignedToPatient:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasHistoryUpdates:::Show" value="true"/>
+        <PARAM name="CLS:::@A73_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#aboutHistoryRecord:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#patientHasAnAssignedBed:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A16_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#departmentIsInWing:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasCollege:::Changed" value="false"/>
+        <PARAM name="CLS:::@A28_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#worksIn:::Changed" value="false"/>
+        <PARAM name="CLS:::@A51_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Appointment:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#isSupervisor:::Color" value="-16777040"/>
+        <PARAM name="backlinks" value="true"/>
+        <PARAM name="CLS:::@A63_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#aboutHistoryRecord:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A29_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Accounting:::Changed" value="false"/>
+        <PARAM name="CLS:::@A49_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A18_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasCollege:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A15_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A69_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="ins" value="false"/>
+        <PARAM name="CLS:::@A41_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A35_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedPatient:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A55_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse:::Changed" value="false"/>
+        <PARAM name="CLS:::@A53_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A16_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="radius" value="2"/>
+        <PARAM name="sys" value="false"/>
+        <PARAM name="CLS:::@A36_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#HistoryUpdate:::Changed" value="false"/>
+        <PARAM name="CLS:::@A65_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Department:::Changed" value="false"/>
+        <PARAM name="CLS:::@A56_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAppointedDoctor:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wingHasDepartment:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A22_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A31_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A42_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A43_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A62_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Room:::Color" value="-1"/>
+        <PARAM name="CLS:::@A43_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="CLS:::@A55_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#isEspeciallyAttends:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A63_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Changed" value="false"/>
+        <PARAM name="edgITLC" value="false"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Prescription:::Color" value="-1"/>
+        <PARAM name="CLS:::@A67_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="edgFS" value="10"/>
+        <PARAM name="CLS:::@A21_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="zoomSB" value="-12"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#bedIsAssignedToPatient:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A33_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedPatient:::Show" value="true"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#hasAffiliatedPatient:::Changed" value="false"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#bedIsInRoom:::Color" value="-16777040"/>
+        <PARAM name="CLS:::@A45_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="insLW" value="25"/>
+        <PARAM name="CLS:::http://www.owl-ontologies.com/Hospital-ver2.owl#Bed:::Color" value="-1"/>
+        <PARAM name="CLS:::@A57_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="CLS:::@A11_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="SLOT:::http://www.owl-ontologies.com/Hospital-ver2.owl#wardHasRooms:::Changed" value="false"/>
+        <PARAM name="CLS:::@A69_4e65abfb_a34b_41ff_ad57_0b9ede74fbbb:::Color" value="-1"/>
+        <PARAM name="hyperSB" value="0"/>
+    </PARAMETERS>
+</TOUCHGRAPH_LB>
